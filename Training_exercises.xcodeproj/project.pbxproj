@@ -6,10 +6,19 @@
 	objectVersion = 56;
 	objects = {
 
+/* Begin PBXFileReference section */
+		804A1B5D2A1444AC001A3D0C /* Ejercicios_intermedio_RubenAlonso.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Ejercicios_intermedio_RubenAlonso.playground; sourceTree = "<group>"; };
+		804A1B5E2A1444AC001A3D0C /* Ejercicios básicos_RubenAlonso.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Ejercicios básicos_RubenAlonso.playground"; sourceTree = "<group>"; };
+		804A1B5F2A1444AC001A3D0C /* Ejercicios refuerzo_RubenAlonso.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Ejercicios refuerzo_RubenAlonso.playground"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
 /* Begin PBXGroup section */
 		8024A4CC2A1440C500FC4040 = {
 			isa = PBXGroup;
 			children = (
+				804A1B5E2A1444AC001A3D0C /* Ejercicios básicos_RubenAlonso.playground */,
+				804A1B5F2A1444AC001A3D0C /* Ejercicios refuerzo_RubenAlonso.playground */,
+				804A1B5D2A1444AC001A3D0C /* Ejercicios_intermedio_RubenAlonso.playground */,
 			);
 			sourceTree = "<group>";
 		};
