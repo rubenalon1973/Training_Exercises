@@ -5,7 +5,7 @@ import Foundation
  */
 //Se conoce como número primo a cada número natural que sólo puede dividirse por 1 y por sí mismo. El 1 no es y el 2 es el único primo par
 
-//MARK: COMO EL DIAGRAMA DE FLUJO DADO EN EL EJERCICIO
+//MARK: SEGÚN EL  DIAGRAMA DE FLUJO DADO EN EL EJERCICIO
 
 
 func isPrime2 (num:Int) -> Bool {
