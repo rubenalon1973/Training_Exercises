@@ -8,7 +8,7 @@ import Foundation
 
 
 /*
-Dependiendo del sist. serán de estos bits y tendrán esa capacidad:
+ Dependiendo del sist. serán de estos bits y tendrán esa capacidad:
  -> Enteros con signo
  Int8  : 8  bits desde -2^7  hasta 2^7-1  = -128 a 127
  Int16 : 16 bits desde -2^15 hasta 2^15-1 = -32.768 a 32.767
@@ -20,7 +20,7 @@ Dependiendo del sist. serán de estos bits y tendrán esa capacidad:
  UInt16 : 16 bits 0 a 2^16-1 = 65.535
  UInt32 : 32 bits 0 a 2^32-1 = 4.294.967.295
  UInt64 : 64 bits 0 a 2^64-1 = 18.446.744.073.709.551.615
-*/
+ */
 
 let dato1:Int  = -2
 let dato2:Int  = 8
@@ -63,18 +63,18 @@ let optionalWord:String? = "table"
 struct Personage {
     var name:String
     var life:Int
-    }
+}
 let enemy  = Personage(name: "Hulk", life: 5)
 let wizard = Personage(name: "Merlin", life: 8)
 
 // Class: Permite definir tipos de datos personalizados que contienen propiedades, métodos y herencia.
 class Person {
     var name: String
-
+    
     init(name: String) {
         self.name = name
     }
-
+    
     func sayHello() {
         print("Hello, my name is \(name).")
     }

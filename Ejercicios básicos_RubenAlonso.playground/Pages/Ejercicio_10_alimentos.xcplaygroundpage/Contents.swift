@@ -7,9 +7,6 @@ import Foundation
  cualquiera de los productos al indicar un número de kilos específico.
  */
 
-
-
-
 var preciosPorKg: [String: Double] = [
     "Patata": 1.50,
     "Tomate": 0.80,

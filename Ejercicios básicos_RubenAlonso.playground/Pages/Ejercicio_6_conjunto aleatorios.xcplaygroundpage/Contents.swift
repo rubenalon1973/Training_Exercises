@@ -34,7 +34,6 @@ func contarPrimos(_ numeros: [Int]) -> String {
     if cantidad == 0 {
         resultado = "No se encontraron números primos en el array."
     } else {
-//        metemos condición para que imprima en sing. o plural
         resultado = "Hay \(cantidad) número\(cantidad == 1 ? "" : "s") primo\(cantidad == 1 ? "" : "s") en el array: " + resultado
     }
     return resultado

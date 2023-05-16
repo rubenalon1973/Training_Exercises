@@ -11,8 +11,8 @@ let arrayTotal:[Int] = Array(0...100)
 var arrayPrimos:[Int] = []
 
 for number in arrayTotal where isPrime(number)  {
-        arrayPrimos.append(number)
-    }
+    arrayPrimos.append(number)
+}
 
 let addYArrayPrimos = addYString(arrayPrimos)
 print("Hay \(arrayPrimos.count) números primos y son los siguientes:\n\(addYArrayPrimos)")

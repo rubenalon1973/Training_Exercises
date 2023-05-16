@@ -8,9 +8,6 @@ import Foundation
  consecutiva para obtener el nuevo valor: 1, 1, 2, 3, 5, 8, 13, 21…
  */
 
-
-
-
 let number = 80
 
 var fibonacci = [1, 1]
@@ -18,7 +15,7 @@ var fibonacci = [1, 1]
 if number >= 2 {
     for i in 2..<number {
         let nextFib = (fibonacci[i-1]) + (fibonacci[i-2])
-        // Salir del bucle si el número de elementos en el array supera el límite establecido
+        
         if nextFib > Int.max {
             break
         }
@@ -30,24 +27,24 @@ let addYFibonacci = addYString(fibonacci)
 print("El total de números de la secuencia de Fibonacci del número \(number) es:\n\n\(addYFibonacci)")
 
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

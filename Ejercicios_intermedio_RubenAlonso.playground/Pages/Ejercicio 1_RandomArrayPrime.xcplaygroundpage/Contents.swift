@@ -1,6 +1,5 @@
+
 import Foundation
-
-
 
 /*
  Ejercicio 1:
@@ -14,28 +13,27 @@ import Foundation
 
 var randomArray = [Int]()
 
-// Llenamos el array con aleatorios
 for _ in 1...50 {
     randomArray.append(Int.random(in: 1...100))
 }
 randomArray
 
 func arrayPrime(num: [Int]) -> String {
-    var result = Set<Int>() //de tipo Set para que no se repitan los nº
+    var result = Set<Int>()
     
     for n in num {
         if isPrime(n) {
             result.insert(n)
         }
     }
-    return "Los números primos aleatorios de \(num) son \(result.sorted())."
+    
+    let primeNumbersString = addYString(Array(result.sorted()))
+    return "En la siguiente lista de números enteros aleatorios: \(addYString(num)), podemos ver que hay estos números que son primos: \(primeNumbersString)."
 }
-
 
 let primeNumbers = arrayPrime(num: randomArray)
 print(primeNumbers)
 
-//MARK: Falta sacarlos del array y convertirlos en string
 
 
 

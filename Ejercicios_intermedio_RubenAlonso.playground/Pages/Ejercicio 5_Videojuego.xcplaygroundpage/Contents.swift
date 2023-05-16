@@ -14,7 +14,7 @@ import Foundation
  infligido cuando es atacado por un Enemigo.
  - Guerrera hereda de Héroe. Tiene una espada que en su inicialización
  tendrá un valor de ataque que será un número aleatorio de 0 a la mitad
-
+ 
  de su fuerza. Dicha espada inflige un daño extra a los enemigos igual
  al total de dicha fuerza.
  - Enemigo hereda de Personaje. Tiene valor de fuerza de ataque y puede

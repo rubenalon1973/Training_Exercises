@@ -10,10 +10,10 @@ import Foundation
 struct Point {
     var x: Int
     var y: Int
-
+    
     mutating func move(x2: Int, y2: Int)  {
-       self.x = x2
-       self.y = y2
+        self.x = x2
+        self.y = y2
     }
 }
 var moving = Point(x: 4, y: 2)

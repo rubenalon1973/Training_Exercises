@@ -32,7 +32,7 @@ func isPrime1 (num:Int) -> Bool {
         return false
     }else{
         return true
-        }
+    }
 }
 isPrime1(num: 153548601)
 

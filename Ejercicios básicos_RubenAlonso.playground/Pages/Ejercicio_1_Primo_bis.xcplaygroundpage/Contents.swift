@@ -9,7 +9,7 @@ import Foundation
 
 
 func isPrime2 (num:Int) -> Bool {
-
+    
     if num <= 0 {
         return false
     } else if num <= 3 {
@@ -27,11 +27,11 @@ func isPrime2 (num:Int) -> Bool {
     }
     return true
 }
-     
+
 
 
 isPrime2(num: 674329)
 
 //Mi fx de sources
 isPrime(153548601)
-            
+

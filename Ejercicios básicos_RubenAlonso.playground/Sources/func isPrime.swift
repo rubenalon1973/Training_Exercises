@@ -1,3 +1,4 @@
+
 import Foundation
 
 public func isPrime(_ numero: Int) -> Bool {

@@ -6,7 +6,6 @@ import Foundation
  Crea una clase hija de Libro que será Libro Físico y Libro Electrónico. En el primero registra el número de páginas del libro y en el segundo la URL donde puede comprarse en formato electrónico. Crea 4 subclases, 2 de libro físico y 2 de libro electrónico.
  */
 
-//Pegamos la clase Book del ejercicio anterior
 class Book {
     let title: String
     let author: String
@@ -22,8 +21,7 @@ class Book {
         return "\(title), \(author), \(year)."
     }
 }
-//Creamos una clase hija de Book en papel, donde se van a registrar las pag del libro
-//Inicializamos y tb llamamos al init del padre
+
 class PaperBook: Book {
     var numberOfPages: Int
     
@@ -32,8 +30,7 @@ class PaperBook: Book {
         super.init(title: title, author: author, year: year)
     }
 }
-//Creamos una clase hija de Book eletrónico, donde sale la URL para comprarlo
-//Inicializamos y tb llamamos al init del padre
+
 class Ebook: Book {
     let urlEbook:URL
     
@@ -42,7 +39,7 @@ class Ebook: Book {
         super.init(title: title, author: author, year: year)
     }
 }
-//Creamos las subclases de PaperBook
+
 class LongBook: PaperBook {
     let thriller: String
     let romantic: String
@@ -57,6 +54,7 @@ class LongBook: PaperBook {
         super.init(title: title, author: author, year: year, numberOfPages: numberOfPages)
     }
 }
+
 class ShortBook: PaperBook {
     let story: String
     let cooking: String
@@ -69,7 +67,7 @@ class ShortBook: PaperBook {
         super.init(title: title, author: author, year: year, numberOfPages: numberOfPages)
     }
 }
-//Creamos las subclases de Ebook
+
 class AudioBook: Ebook {
     let stereo: String
     let mono: String

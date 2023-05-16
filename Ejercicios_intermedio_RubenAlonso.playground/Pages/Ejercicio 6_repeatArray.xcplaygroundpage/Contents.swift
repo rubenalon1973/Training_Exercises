@@ -10,7 +10,7 @@ import Foundation
  */
 
 func repeatNumbers(nums: [Int]) -> [(value: Int, repeating: Int)] {
-    let numbers = nums.sorted() // Ordenamos los números
+    let numbers = nums.sorted()
     var result = [(value: Int, repeating: Int)]()
     var count = 1
     

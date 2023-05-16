@@ -14,7 +14,7 @@ var sumArrayNum:Double = 0
 
 for i in arrayNum {
     sumArrayNum += Double(i)
-    }
+}
 sumArrayNum
 arrayNum.count
 let mediArrayNum:Double = sumArrayNum / Double(arrayNum.count)

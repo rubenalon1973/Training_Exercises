@@ -1,3 +1,4 @@
+
 import Foundation
 
 
@@ -16,6 +17,4 @@ public func addYString(_ array: [Int], separator: String = ", ", finalSeparator:
 
 
 
-//let array = ["caca","caca","caca"]
-//    
-//let joinedString = array.dropLast().joined(separator: ", ") + (array.count > 1 ? " and " : "") + array.last!
+

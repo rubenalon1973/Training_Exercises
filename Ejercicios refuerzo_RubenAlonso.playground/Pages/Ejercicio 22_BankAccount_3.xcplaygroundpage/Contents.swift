@@ -9,7 +9,7 @@ import Foundation
 final class BankAccount {
     let holder: String
     var balance: Int
-        
+    
     init(holder: String, balance: Int) {
         self.balance = balance
         self.holder = holder
@@ -27,21 +27,21 @@ final class BankAccount {
     func info() {
         print("Eres \(holder) y tienes este saldo en cuenta: \(balance)")
     }
-//    Versión con llamada a las funciones anteriores
-//    func transfer(anotherAccount: BankAccount, actualAccount: BankAccount, amount: Int) -> String {
-//        guard amount >= 0 else { return "No hay saldo suficiente para hacer la operación" }
-//        actualAccount.remove(amount: amount)
-//        anotherAccount.toDeposit(amount: amount)
-//        return "Se ha efectuado una transferencia de \(amount)€ desde la cuenta de \(actualAccount.holder) a la cuenta de \(anotherAccount.holder)"
-//    }
+    //MARK:    Versión con llamada a las funciones anteriores
+    //    func transfer(anotherAccount: BankAccount, actualAccount: BankAccount, amount: Int) -> String {
+    //        guard amount >= 0 else { return "No hay saldo suficiente para hacer la operación" }
+    //        actualAccount.remove(amount: amount)
+    //        anotherAccount.toDeposit(amount: amount)
+    //        return "Se ha efectuado una transferencia de \(amount)€ desde la cuenta de \(actualAccount.holder) a la cuenta de \(anotherAccount.holder)"
+    //    }
     
-//    Versión sin llamada a las funciones
-      func trasnfer(anotherAccount: BankAccount, amount: Int) {
-          guard amount > 0 && balance >= amount  else {
-              print("No hay saldo suficiente para hacer la operación")
-              return }
-          balance -= amount
-          anotherAccount.balance += amount
+    //MARK:    Versión sin llamada a las funciones
+    func trasnfer(anotherAccount: BankAccount, amount: Int) {
+        guard amount > 0 && balance >= amount  else {
+            print("No hay saldo suficiente para hacer la operación")
+            return }
+        balance -= amount
+        anotherAccount.balance += amount
     }
 }
 let accountOne = BankAccount(holder: "Pepe", balance: 5000)

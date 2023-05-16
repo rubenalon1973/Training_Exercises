@@ -9,10 +9,10 @@ import Foundation
 struct Point {
     var x: Double
     var y: Double
-   
+    
     mutating func move(x2: Double, y2: Double)  {
-       self.x = x2
-       self.y = y2
+        self.x = x2
+        self.y = y2
     }
     func distance(otherPoint: Point) -> Double {
         return sqrt(((otherPoint.x - x) * (otherPoint.x - x)) + ((otherPoint.y - y) * (otherPoint.y - y)))

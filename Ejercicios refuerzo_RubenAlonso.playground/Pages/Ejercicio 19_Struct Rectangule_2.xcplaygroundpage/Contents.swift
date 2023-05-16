@@ -29,12 +29,11 @@ func calcularAreaRectangulos(array: [Rectangle]) -> Double {
     for n in array {
         areaAll += n.area
     }
-        return areaAll
+    return areaAll
 }
 let result = calcularAreaRectangulos(array: arrayRectangles)
 print("El área total de nuestro arrayRectangules es \(result)")
 
 // MARK: OPCIÓN FUNCIONAL
 
-let resultFunc = arrayRectangles.reduce(0, { $0 + $1.area })// 0: valor inicial, $0: n(element.iterado)
-
+let resultFunc = arrayRectangles.reduce(0, { $0 + $1.area })

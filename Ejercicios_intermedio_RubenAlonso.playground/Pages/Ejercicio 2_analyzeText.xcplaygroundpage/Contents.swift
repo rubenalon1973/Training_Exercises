@@ -1,3 +1,4 @@
+
 import Foundation
 
 /*
@@ -9,21 +10,18 @@ import Foundation
 //MARK: VERSIÓN ESTRUCTURADA
 
 func analyzeText(text: String) {
-    // Divide el texto en palabras
     let words = text.split(separator: " ")
-    // Número de palabras
     let numWords = words.count
     print("Número de palabras: \(numWords)")
-    // Longitud completa
     let textLength = text.count
     print("Longitud completa: \(textLength)")
-    // Listado de longitudes de palabras
     var wordLengths = [Int]()
+    
     for word in words {
-        // Añade la longitud de la palabra a la lista
         wordLengths.append(word.count)
     }
     print("Longitud de cada palabra:")
+    
     for length in wordLengths {
         print(length)
     }

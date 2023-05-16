@@ -4,7 +4,7 @@ import Foundation
  Ejercicio 7:
  Realice un programa que sea capaz de sumar todos los números que hay en
  un array de números enteros.
-*/
+ */
 
 //MARK: VS without function:
 

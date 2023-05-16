@@ -1,3 +1,4 @@
+
 import Foundation
 
 
@@ -10,18 +11,14 @@ import Foundation
  */
 
 
-//TODO: A FALTA DE + CARACTERES
-
 
 let phrase = "Me encontré con un niño feo y luego vi un niño guapo y luego un niño también feo en la calle"
 
 func breakDownPhrase(words: String) -> [String:Int] {
-    //ordenamos el dic
     let array = words.split(separator: " ").sorted()
-    //para ir llenando
     var resultDic = [String:Int]()
-    //inicializamos
     var count = 1
+    
     for word in array {
         if resultDic.keys.contains(String(word)) {
             count += 1
@@ -34,7 +31,7 @@ func breakDownPhrase(words: String) -> [String:Int] {
     return resultDic
 }
 breakDownPhrase(words: phrase)
-    
+
 
 
 

@@ -4,7 +4,7 @@ import Foundation
 /*
  Ejercicio 18
  Agrega un método a la clase Persona llamado birthdate que aumente la edad de la persona en 1. Luego, crea un objeto de la clase Persona e inicializa las propiedades con valores y llama al método birthdate.
-
+ 
  */
 
 final class People {
@@ -22,7 +22,6 @@ final class People {
     }
 }
 
-//Creamos las 5 instancias de diferentes  personas asignando datos a las prop de la class:
 let firstPerson = People(name: "Marcos", age: 19, address: "Burguete 11")
 let secondPerson = People(name: "Raúl", age: 17, address: "Burguete 13")
 let thirdPerson = People(name: "Alma", age: 10, address: "Burguete 14")
