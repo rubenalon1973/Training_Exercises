@@ -1,3 +1,3 @@
 ## Training_exercises
 
-# Algorithmic exercises
+# Algorithmic 
