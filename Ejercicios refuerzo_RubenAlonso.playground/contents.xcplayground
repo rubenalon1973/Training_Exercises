@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' buildActiveScheme='true' importAppTypes='true'>
+    <pages>
+        <page name='Ejercicio 1_Data Types'/>
+        <page name='Ejercicio 2_Arithmetic Operations'/>
+        <page name='Ejercicio 3_Divisible Number'/>
+        <page name='Ejercicio 4_Loops For and While'/>
+        <page name='Ejercicio 5_Array Sum and Multiplication'/>
+        <page name='Ejercicio 6_Dictionary'/>
+        <page name='Ejercicio 7_Enum Week'/>
+        <page name='Ejercicio 8_Class Person'/>
+        <page name='Ejercicio 9_Struct Rectangule'/>
+        <page name='Ejercicio 10_Class Book'/>
+        <page name='Ejercicio 11_Class Heritage'/>
+        <page name='Ejercicio 12_Struct Point'/>
+        <page name='Ejercicio 13_BankAccount'/>
+        <page name='Ejercicio 14_Person Greeting'/>
+        <page name='Ejercicio 15_Lend Book'/>
+        <page name='Ejercicio_16_StructPoint_2'/>
+        <page name='Ejercicio 17_BankAccount_2'/>
+        <page name='Ejercicio 18_Person Birthdate'/>
+        <page name='Ejercicio 19_Struct Rectangule_2'/>
+        <page name='Ejercicio 20_Lend Book_2'/>
+        <page name='Ejercicio 21_StructPoint_3'/>
+        <page name='Ejercicio 22_BankAccount_3'/>
+    </pages>
+</playground>

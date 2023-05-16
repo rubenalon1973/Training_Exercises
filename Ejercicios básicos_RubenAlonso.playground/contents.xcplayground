@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' importAppTypes='true'>
+    <pages>
+        <page name='Ejercicio_1_Primo'/>
+        <page name='Ejercicio_1_Primo_bis'/>
+        <page name='Ejercicio_2_arrayPrimos'/>
+        <page name='Ejercicio_3_Fibonacci'/>
+        <page name='Ejercicio_4_palíndroma'/>
+        <page name='Ejercicio_5_factorial'/>
+        <page name='Ejercicio_6_conjunto aleatorios'/>
+        <page name='Ejercicio_7_sumArrayInt'/>
+        <page name='Ejercicio_8_100arrayPrimos'/>
+        <page name='Ejercicio_9_media aritmética'/>
+        <page name='Ejercicio_10_alimentos'/>
+    </pages>
+</playground>

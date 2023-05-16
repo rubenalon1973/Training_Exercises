@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' buildActiveScheme='true' importAppTypes='true'>
+    <pages>
+        <page name='Ejercicio 1_RandomArrayPrime'/>
+        <page name='Ejercicio 2_analyzeText'/>
+        <page name='Ejercicio 3_chocolateFactory'/>
+        <page name='Ejercicio 4_colegio'/>
+        <page name='Ejercicio 5_Videojuego'/>
+        <page name='Ejercicio 6_repeatArray'/>
+        <page name='Ejercicio 7_wordsPhrase'/>
+    </pages>
+</playground>
