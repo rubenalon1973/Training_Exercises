@@ -1,6 +1,4 @@
-## Training_exercises
+# **Training exercises**
 
-# Algorithmic 
-/imgres
-/imgres
-/imgres
+### _Algorithmic_
+
