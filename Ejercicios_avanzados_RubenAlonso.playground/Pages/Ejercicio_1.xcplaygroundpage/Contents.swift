@@ -6,20 +6,20 @@ import Foundation
  usar el mínimo de código posible.
  */
 
-enum Operacion {
-    case suma
-    case resta
+enum Operation {
+    case sum
+    case rest
     case mult
     case div
 }
 
-func calculadoraCifras(_ nums: [Int], op: Operacion = .suma) -> Int? {//coge la suma x defect
+func calculatorNums(_ nums: [Int], op: Operation = .sum) -> Int? {
     guard let initialResult = nums.first, nums.count > 1 else { return nil }
     
     switch op {
-    case .suma:
+    case .sum:
         return nums.dropFirst().reduce(initialResult, +)
-    case .resta:
+    case .rest:
         return nums.dropFirst().reduce(initialResult, -)
     case .mult:
         return nums.dropFirst().reduce(initialResult, *)
@@ -28,11 +28,10 @@ func calculadoraCifras(_ nums: [Int], op: Operacion = .suma) -> Int? {//coge la 
     }
 }
 
-calculadoraCifras([15,3])//no hace falta indicar suma
-calculadoraCifras([15,3], op: .resta)
-calculadoraCifras([15,3], op: .mult)
-calculadoraCifras([15,3], op: .div)
-
+calculatorNums([15,3])
+calculatorNums([15,3], op: .rest)
+calculatorNums([15,3], op: .mult)
+calculatorNums([15,3], op: .div)
 
 
 
