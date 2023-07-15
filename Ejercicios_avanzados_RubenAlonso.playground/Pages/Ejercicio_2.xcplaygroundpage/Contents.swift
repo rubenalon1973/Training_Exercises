@@ -5,43 +5,35 @@ import UIKit
  Crea una calculadora parcializada. Primero una función que devuelva el closure para realizar una operación aritmética, y que con su resultado lo aplique al número que queramos.
  */
 
-enum Operacion {
-    case suma
-    case resta
+enum Operation {
+    case sum
+    case rest
     case mult
     case div
 }
 
-func crearOperacion(_ operador: Operacion) -> (Double) -> (Double) -> Double {
-    switch operador {
-    case .suma:
-        return { numero in
-            return { x in
-                return numero + x
-            }
+func createOperation(_ operators: Operation) -> (Double) -> (Double) -> Double {
+    switch operators {
+    case .sum:
+        return { num in
+            { x in num + x }
         }
-    case .resta:
-        return { numero in
-            return { x in
-                return numero - x
-            }
+    case .rest:
+        return { num in
+            { x in num - x }
         }
     case .mult:
-        return { numero in
-            return { x in
-                return numero * x
-            }
+        return { num in
+            { x in num * x }
         }
     case .div:
-        return { numero in
-            return { x in
-                return numero / x
-            }
+        return { num in
+            { x in num / x }
         }
     }
 }
 
-let suma = crearOperacion(.suma)
-let resultadoSuma = suma(5)
-let resultadoFinal = resultadoSuma(3)
-print(resultadoFinal)
+let sum = createOperation(.sum)
+let sumResult = sum(5)
+let finalResult = sumResult(3)
+print(finalResult)

@@ -5,32 +5,32 @@ Ejercicio 3:
 Convierte la función del ejercicio 1 en una calculadora con control de errores en vez de devolver datos opcionales.
 */
 
-enum Operacion {
-    case suma
-    case resta
+enum Operation {
+    case sum
+    case rest
     case mult
     case div
 }
 
-enum CalculadoraErrors: Error {
+enum ControlErrors: Error {
     case invalidNums
     
     var description: String {
         switch self {
         case .invalidNums:
-            return "El array no puede estar vacío y debe de tener más de un número"
+            return "The array cannot be empty and must have more than one number"
         }
     }
 }
 
-func calculadoraCifras(_ nums: [Int], op: Operacion = .suma) throws -> Int? {
-    guard let initialResult = nums.first, nums.count > 1 else { throw CalculadoraErrors.invalidNums }
+func calculatorNums(_ nums: [Int], op: Operation = .sum) throws -> Int? {
+    guard let initialResult = nums.first, nums.count > 1 else { throw ControlErrors.invalidNums }
 
     
     switch op {
-    case .suma:
+    case .sum:
         return nums.dropFirst().reduce(initialResult, +)
-    case .resta:
+    case .rest:
             return nums.dropFirst().reduce(initialResult, -)
     case .mult:
         return nums.dropFirst().reduce(initialResult, *)
@@ -39,7 +39,7 @@ func calculadoraCifras(_ nums: [Int], op: Operacion = .suma) throws -> Int? {
     }
 }
 
-try calculadoraCifras([15,3], op: .suma)
-try calculadoraCifras([15,3], op: .resta)
-try calculadoraCifras([15,3], op: .mult)
-try calculadoraCifras([15,3], op: .div)
+try calculatorNums([15,3], op: .sum)
+try calculatorNums([15,3], op: .rest)
+try calculatorNums([15,3], op: .mult)
+try calculatorNums([15,3], op: .div)

@@ -28,7 +28,7 @@ func calculadoraCifras(_ nums: [Int], op: Operacion = .suma) -> Int? {//coge la 
     }
 }
 
-calculadoraCifras([15,3])
+calculadoraCifras([15,3])//no hace falta indicar suma
 calculadoraCifras([15,3], op: .resta)
 calculadoraCifras([15,3], op: .mult)
 calculadoraCifras([15,3], op: .div)
